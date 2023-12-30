@@ -1,10 +1,64 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert Title here</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+	crossorigin="anonymous"></script>
+
+<link rel="stylesheet" th:href="@{/css/style.css}" />
 </head>
 <body>
-<h1>This is home page</h1>
-</body>
+   <div th:replace="nav :: content"></div>
+	<header>
+		<h1>Welcome to BookMate Pro</h1>
+		<p>Your Ultimate Book Management Web App</p>
+	</header>
+	<section>
+		<h2>Key Features:</h2>
+		<ol>
+			<li><strong>User-Friendly Interface:</strong> Navigate through
+				your book collection effortlessly with our clean and user-friendly
+				interface.</li>
 
+			<li><strong>Dynamic Search and Filters:</strong> Quickly locate
+				your favorite books using powerful search and filtering options. <!-- Sort by genre, author, publication date, and more to find exactly
+				what you're looking for in seconds.  --></li>
+
+			<li><strong>Effortless Book Entry:</strong> Easily add new books
+				to your collection with our simplified book entry form. Input
+				details such as title, author, genre, and cover image, and watch as
+				BookMate Pro organizes and displays your library in a visually
+				appealing manner.</li>
+
+			<li><strong>Responsive Design:</strong> Access your book
+				collection from any device with our responsive design.</li>
+
+			<li><strong>Smart Recommendations:</strong> Receive personalized
+				book recommendations based on your reading history and preferences.
+				Let BookMate Pro introduce you to new and exciting titles that align
+				with your interests.</li>
+
+			<li><strong>Multi-User Support:</strong> Collaborate with
+				friends or family by adding multiple users to your BookMate Pro
+				account. Share and discuss your favorite reads effortlessly within a
+				connected community.</li>
+
+			<li><strong>Secure Data Management:</strong> Rest easy knowing
+				that your book collection data is stored securely in a MySQL
+				database. BookMate Pro prioritizes data integrity and
+				confidentiality.</li>
+		</ol>
+	</section>
+	<footer>
+		<p>Experience the future of book management with BookMate Pro -
+			where innovation meets simplicity. Happy reading!</p>
+	</footer>
+</body>
 </html>
